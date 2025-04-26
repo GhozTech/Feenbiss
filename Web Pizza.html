@@ -1,0 +1,168 @@
+<html class="scroll-smooth" lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Pizza Modern - Pesan Sekarang
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gradient-to-b from-yellow-50 via-yellow-100 to-yellow-50 min-h-screen flex flex-col">
+  <header class="bg-yellow-400 shadow-md">
+   <div class="container mx-auto px-6 py-5 flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+     <img alt="Logo pizza modern bergaya minimalis dengan irisan pizza berwarna merah dan kuning" class="w-12 h-12" height="48" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4e7fc726-ab48-4bab-74e0-cdc7e657bf69.jpg" width="48"/>
+     <h1 class="text-white font-extrabold text-2xl tracking-wide select-none">
+      Pizza Modern
+     </h1>
+    </div>
+    <nav class="hidden md:flex space-x-8 text-yellow-100 font-semibold">
+     <a class="hover:text-white transition" href="#menu">
+      Menu
+     </a>
+     <a class="hover:text-white transition" href="#about">
+      Tentang Kami
+     </a>
+     <a class="hover:text-white transition" href="#contact">
+      Kontak
+     </a>
+    </nav>
+    <button aria-label="Toggle menu" class="md:hidden text-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-300" id="menu-toggle">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+   <nav class="md:hidden bg-yellow-300 text-yellow-900 font-semibold px-6 py-4 space-y-3 hidden" id="mobile-menu">
+    <a class="block hover:text-yellow-700 transition" href="#menu">
+     Menu
+    </a>
+    <a class="block hover:text-yellow-700 transition" href="#about">
+     Tentang Kami
+    </a>
+    <a class="block hover:text-yellow-700 transition" href="#contact">
+     Kontak
+    </a>
+   </nav>
+  </header>
+  <main class="flex-grow container mx-auto px-6 py-12">
+   <section class="text-center max-w-3xl mx-auto mb-16">
+    <h2 class="text-4xl font-extrabold text-yellow-700 mb-4 leading-tight">
+     Nikmati Pizza Lezat &amp; Modern
+    </h2>
+    <p class="text-yellow-900 text-lg">
+     Pilih pizza favoritmu, kecil atau besar, dan pesan langsung melalui WhatsApp dengan mudah dan cepat!
+    </p>
+   </section>
+   <section class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10" id="menu">
+    <article aria-label="Pesan Pizza Kecil seharga 4 ribu rupiah" class="bg-white rounded-3xl shadow-lg p-8 flex flex-col items-center hover:shadow-yellow-400 transition-shadow cursor-pointer" onclick="orderPizza('Kecil', 4000)" onkeypress="if(event.key==='Enter'){orderPizza('Kecil', 4000)}" role="button" tabindex="0">
+     <img alt="Pizza kecil berukuran 20 cm dengan topping keju meleleh dan saus tomat segar di atas piring putih" class="w-48 h-48 object-cover rounded-2xl mb-6" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ffcc3270-40ec-42f2-2a53-ff8f2cd0439d.jpg" width="300"/>
+     <h3 class="text-2xl font-bold text-yellow-700 mb-2">
+      Pizza Kecil
+     </h3>
+     <p class="text-yellow-900 font-semibold text-lg mb-4">
+      Rp 4.000
+     </p>
+     <button aria-label="Pesan Pizza Kecil" class="bg-yellow-400 text-yellow-900 font-semibold px-6 py-3 rounded-full shadow-md hover:bg-yellow-500 transition" type="button">
+      Pesan Sekarang
+     </button>
+    </article>
+    <article aria-label="Pesan Pizza Besar seharga 40 ribu rupiah" class="bg-white rounded-3xl shadow-lg p-8 flex flex-col items-center hover:shadow-yellow-400 transition-shadow cursor-pointer" onclick="orderPizza('Besar', 40000)" onkeypress="if(event.key==='Enter'){orderPizza('Besar', 40000)}" role="button" tabindex="0">
+     <img alt="Pizza besar berukuran 40 cm dengan topping pepperoni, keju meleleh, dan sayuran segar di atas piring kayu" class="w-48 h-48 object-cover rounded-2xl mb-6" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a1424aa6-6c51-4493-5cb4-38bf9bb49d0f.jpg" width="300"/>
+     <h3 class="text-2xl font-bold text-yellow-700 mb-2">
+      Pizza Besar
+     </h3>
+     <p class="text-yellow-900 font-semibold text-lg mb-4">
+      Rp 40.000
+     </p>
+     <button aria-label="Pesan Pizza Besar" class="bg-yellow-400 text-yellow-900 font-semibold px-6 py-3 rounded-full shadow-md hover:bg-yellow-500 transition" type="button">
+      Pesan Sekarang
+     </button>
+    </article>
+   </section>
+   <section class="max-w-4xl mx-auto mt-20 bg-yellow-100 rounded-3xl p-10 shadow-lg text-yellow-900" id="about">
+    <h2 class="text-3xl font-extrabold mb-6 text-center">
+     Tentang Pizza Modern
+    </h2>
+    <p class="text-center text-lg leading-relaxed">
+     Pizza Modern hadir untuk memberikan pengalaman menikmati pizza yang berbeda dengan cita rasa autentik dan bahan-bahan berkualitas tinggi. Kami mengutamakan kesegaran dan kepuasan pelanggan dengan layanan pesan antar yang cepat dan mudah melalui WhatsApp.
+    </p>
+   </section>
+   <section class="max-w-4xl mx-auto mt-20 bg-yellow-100 rounded-3xl p-10 shadow-lg text-yellow-900" id="contact">
+    <h2 class="text-3xl font-extrabold mb-6 text-center">
+     Kontak Kami
+    </h2>
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-8 text-yellow-900">
+     <div class="flex items-center space-x-4">
+      <i class="fas fa-phone-alt fa-2x">
+      </i>
+      <a class="text-lg font-semibold hover:underline" href="tel:+6281234567890">
+       +62 812-3456-7890
+      </a>
+     </div>
+     <div class="flex items-center space-x-4">
+      <i class="fab fa-whatsapp fa-2x text-green-600">
+      </i>
+      <a class="text-lg font-semibold hover:underline" href="https://wa.me/6281234567890" rel="noopener" target="_blank">
+       Chat WhatsApp
+      </a>
+     </div>
+     <div class="flex items-center space-x-4">
+      <i class="fas fa-map-marker-alt fa-2x">
+      </i>
+      <address class="not-italic text-lg font-semibold">
+       Jl. Pizza Modern No. 123, Jakarta, Indonesia
+      </address>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-yellow-400 text-yellow-900 py-6 mt-16 shadow-inner">
+   <div class="container mx-auto px-6 text-center font-semibold select-none">
+    © 2024 Pizza Modern. Semua hak cipta dilindungi.
+   </div>
+  </footer>
+  <script>
+   const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    function orderPizza(size, price) {
+      const phoneNumber = '6281234567890'; // Ganti dengan nomor WhatsApp Anda tanpa tanda + atau spasi
+      const formattedPrice = price.toLocaleString('id-ID', {
+        style: 'currency',
+        currency: 'IDR',
+        minimumFractionDigits: 0,
+      });
+      const message = `Halo, saya ingin memesan Pizza Modern:\n\n- Ukuran: ${size}\n- Harga: ${formattedPrice}\n\nMohon konfirmasi pesanan saya. Terima kasih!`;
+      const encodedMessage = encodeURIComponent(message);
+      const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+      window.open(url, '_blank');
+    }
+
+    // Add click event to buttons inside articles to prevent double triggering
+    document.querySelectorAll('article button').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const article = btn.closest('article');
+        if (article) {
+          const size = article.querySelector('h3').textContent.trim().split(' ')[1];
+          const priceText = article.querySelector('p').textContent.trim().replace(/[^\d]/g, '');
+          const price = parseInt(priceText, 10);
+          orderPizza(size, price);
+        }
+      });
+    });
+  </script>
+ </body>
+</html>
